@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
     int N;
-    int found = 0;
+    bool found = false;
 
     scanf("%d", &N);
 
@@ -13,7 +14,7 @@ int main() {
                 if (total == N) {
                     if (c < a || c < b) {
                         printf("%d %d %d\n", a, b, c);
-                        found = 1;
+                        found = true;
                     }
                 }
             }
